@@ -24,11 +24,10 @@ class VehicleDemo {
         mercedes.fuelcap = 55;
         mercedes.lkm = 10.1;
 
-        int range1 = minivan.range();
-        int range2 = mercedes.range();
-       System.out.println("minivan ma zasięg: " + range1);
 
-       System.out.println("mercedes ma zasięg: " + range2);
+       System.out.println("minivan ma zasięg: " + minivan.range());
+
+       System.out.println("mercedes ma zasięg: " + mercedes.range());
 
 
     }
