@@ -5,8 +5,8 @@ class Vehicle {
     int fuelcap;
     double lkm;
 
-    void range(){
-        System.out.println("Zasięg (km): " + (int) (fuelcap / lkm * 100));
+    int range(){
+         return (int) (fuelcap / lkm * 100);
     }
 }
 
@@ -24,10 +24,12 @@ class VehicleDemo {
         mercedes.fuelcap = 55;
         mercedes.lkm = 10.1;
 
-       System.out.println("minivan ma ");
-       minivan.range();
-       System.out.println("mercedes ma ");
-       mercedes.range();
+        int range1 = minivan.range();
+        int range2 = mercedes.range();
+       System.out.println("minivan ma zasięg: " + range1);
+
+       System.out.println("mercedes ma zasięg: " + range2);
+
 
     }
 }
