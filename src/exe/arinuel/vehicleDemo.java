@@ -5,6 +5,12 @@ class Vehicle {
     int fuelcap;
     double lkm;
 
+    Vehicle(int p, int f, double l) {
+        passengers = p;
+        fuelcap = f;
+        lkm = l;
+    }
+
     int range(){
          return (int) (fuelcap / lkm * 100);
     }
@@ -16,19 +22,12 @@ class Vehicle {
 
 class VehicleDemo {
     public static void main(String args[]) {
-        Vehicle minivan = new Vehicle();
-        Vehicle mercedes = new Vehicle();
+        Vehicle minivan = new Vehicle(7, 65, 9.1);
+        Vehicle mercedes = new Vehicle(5, 55, 10.1);
         double liters;
         int dist = 456;
 
-
-        minivan.passengers = 7;
-        minivan.fuelcap = 65;
-        minivan.lkm = 9.1;
-
-        mercedes.passengers = 5;
-        mercedes.fuelcap = 55;
-        mercedes.lkm = 10.1;
+        
 
         liters = minivan.fuelNeeded(dist);
 
