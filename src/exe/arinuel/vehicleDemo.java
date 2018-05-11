@@ -27,7 +27,7 @@ class VehicleDemo {
         double liters;
         int dist = 456;
 
-        
+
 
         liters = minivan.fuelNeeded(dist);
 
