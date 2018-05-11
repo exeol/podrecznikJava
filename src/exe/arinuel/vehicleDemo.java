@@ -8,12 +8,18 @@ class Vehicle {
     int range(){
          return (int) (fuelcap / lkm * 100);
     }
+
+    double fuelNeeded(int km) {
+        return (double) km / 100 * lkm;
+    }
 }
 
 class VehicleDemo {
     public static void main(String args[]) {
         Vehicle minivan = new Vehicle();
         Vehicle mercedes = new Vehicle();
+        double liters;
+        int dist = 456;
 
 
         minivan.passengers = 7;
@@ -24,11 +30,12 @@ class VehicleDemo {
         mercedes.fuelcap = 55;
         mercedes.lkm = 10.1;
 
+        liters = minivan.fuelNeeded(dist);
 
-       System.out.println("minivan ma zasięg: " + minivan.range());
+       System.out.println("Aby przejechać " + dist + " kilometrów, minivan potrzebuje " + liters + " litrów paliwa");
 
-       System.out.println("mercedes ma zasięg: " + mercedes.range());
-
+        liters = mercedes.fuelNeeded(dist);
+       System.out.println("Aby przejechać " + dist + " kilometrów, mercedes potrzebuje " + liters + " litrów paliwa");
 
     }
 }
