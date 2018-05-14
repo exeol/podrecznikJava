@@ -2,12 +2,17 @@ package exe.arinuel;
 
 public class forEach {
     public static void main(String arg[]) {
-        int table[] = {2, 5, 7, 9, 3, 14, 21, 18, 2, 0, -3};
-        int x = 0;
-                for(int y : table) {
-            System.out.println(y);
-            x += y;
-                }
-                System.out.print("\n \n" + x);
+        int table[][] = {
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12}
+        };
+        for(int x[] : table) {
+            for(int y : x) {
+                System.out.println(y);
+            }
+        }
+
+
     }
 }
