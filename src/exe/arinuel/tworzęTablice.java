@@ -1,39 +1,50 @@
 package exe.arinuel;
 
-class teczka {
-    int tab[][];
-    int x, y;
+class wzór {
+    int tt[][];
+    int k, l;
 
-    teczka(int x, int y) {
-        tab = new int[x][y];
+    wzór(int x, int y) {
+        tt = new int[x][y];
+
     }
 
-    void napelniacz(int k) {
-        for(x = 0; x < tab.length; x++) {
-            for(y = 0; y < tab[0].length; y++) {
-                tab[x][y] = k;
-                k++;
+    void napełniacz(int i) {
+        for(k=0; k<tt.length; k++) {
+            for (l = 0; l < tt[0].length; l++) {
+                tt[k][l] = i;
+                i++;
             }
         }
     }
 
-    int oddawacz(int p, int r) {
-        return tab[p][r];
+
+    int podawacz(int u, int p) {
+        return tt[u][p];
+    }
+
+    void podawacz2() {
+        for(int u[]: tt) {
+            for(int p: u) {
+                System.out.println(p);
+            }
+        }
     }
 }
 
-
-
-
 public class tworzęTablice {
-    public static void main(String arg[]) {
-        teczka bryla = new teczka(14, 22);
+    public static void  main(String arg[]) {
+        wzór tabeleczka = new wzór(5, 7);
 
-        bryla.napelniacz(4);
+        tabeleczka.napełniacz(4);
 
-        int o = bryla.oddawacz(4, 4);
 
-        System.out.println(o);
+        int jj = tabeleczka.podawacz(2,2);
+        System.out.println(jj);
+
+        System.out.println("A teraz całość tabeli:");
+
+        tabeleczka.podawacz2();
 
 
     }
