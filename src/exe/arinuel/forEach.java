@@ -12,6 +12,7 @@ public class forEach {
                 System.out.println(y);
             }
         }
+        System.out.println(arg.length);
 
 
     }
