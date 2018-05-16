@@ -5,7 +5,7 @@ public class showBits {
         int t;
         byte val;
 
-        val = 123;
+        val = 32;
 
         for(t = 128; t > 0; t = t/2)
             if((val & t) != 0) System.out.print("1 ");
