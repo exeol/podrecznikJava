@@ -18,7 +18,8 @@ public class prosteSzyfrowanie {
         for(int i =0; i < encmsg.length(); i ++)
             decmsg = decmsg + (char) (encmsg.charAt(i) ^ key);
 
-        System.out.println("Odszyfrowana wiadomość to: " + decmsg);
+        System.out.println("Odszyfrowana wiadomość to: " + decmsg
+        );
 
 
     }
