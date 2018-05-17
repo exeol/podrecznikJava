@@ -1,8 +1,8 @@
 package exe.arinuel;
 
         class Queue {
-    char q[]; //tablica przechowywująca kolejkę
-    int putloc, getloc; //indeksy operacji put i get
+    private char q[]; //tablica przechowywująca kolejkę
+    private int putloc, getloc; //indeksy operacji put i get
 
     //konstruktor klasy kolejka:
     Queue(int size) {

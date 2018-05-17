@@ -27,6 +27,6 @@ public class accessDemo {
         something.setAlpha(5);
         System.out.println(something.getAlpha());
 
-        something.alpha = 5;
+        /* something.alpha = 5; */
     }
 }
